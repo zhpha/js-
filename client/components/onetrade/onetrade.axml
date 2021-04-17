@@ -1,0 +1,46 @@
+<view>
+        <view class="line" style="font-size:1.1em;">{{datatrade.status[trade.status]}}</view>
+        <view class="line">
+                <view style="width:30%">买家昵称：</view>
+                <view style="70%">{{trade.buyer_nick}}</view>
+        </view>
+        <view class="line">
+                <view style="width:30%">下单时间：</view>
+                <view style="70%">{{trade.created}}</view>
+        </view>
+        <view class="line">
+                <view style="width:30%">付款时间：</view>
+                <view style="70%">{{trade.pay_time}}</view>
+        </view>
+        <view class="line">
+                <view style="width:30%">发货时间：</view>
+                <view style="70%">{{trade.delivery_time}}</view>
+        </view>
+        <view class="line">
+                <view style="width:30%">揽收时间：</view>
+                <view style="70%">{{trade.collect_time}}</view>
+        </view>
+        <view class="line">
+                <view style="width:30%">快递公司：</view>
+                <view style="70%">{{trade.orders[0].logistics_company}}</view>
+        </view>
+        <view class="line">
+                <view style="width:30%">快递单号：</view>
+                <view style="70%">{{trade.orders[0].invoice_no}}</view>
+        </view>
+        <view class="line">
+                <view style="width:30%">卖家备注：</view>
+                <view style="70%" style=" ">
+                        <icon type="success" size="10" color="{{datatrade.ico[trade.seller_flag]}}"></icon>
+                        <text style="margin-left:10px">{{trade.seller_memo}}</text>
+                </view>
+        </view>
+        <view class="line">
+                <view style="width:30%">买家留言：</view>
+                <view style="70%">{{trade.buyer_message}}</view>
+        </view>
+        <view class="line">
+                <view style="width:30%">优惠金额：</view>
+                <view style="70%">￥{{trade.discount_fee}}</view>
+        </view>
+</view>

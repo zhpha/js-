@@ -1,0 +1,10 @@
+{
+  "cloud": {
+    "type": "CLOUDAPP"
+  },
+  "exclude": [
+    "server/**"
+  ],
+  "component2": true,
+  "axmlStrictCheck": true
+}

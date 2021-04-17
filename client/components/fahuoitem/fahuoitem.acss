@@ -1,0 +1,6 @@
+.line{
+        border-bottom: solid 1px #efefef;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+}

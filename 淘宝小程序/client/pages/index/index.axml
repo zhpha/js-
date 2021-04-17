@@ -1,0 +1,21 @@
+<view class="page">
+  <view style=" display: flex;
+  align-items: center;
+  padding: 5px;">
+    <icon a:if="{{!user}}" type="loading" size="40" color="red"></icon>
+    <image a:else src="{{user.avatar}}" style="width:40px;height:40px; border-radius:50%"></image>
+    <view style="margin:0 10px; width:100%;padding:0 40px 0 0; white-space:nowrap">
+      <input placeholder="搜索" style="width:100%"></input>
+      <icon type="search" style="margin-left:10px;" size="25"></icon>
+    </view>
+  </view>
+  <tabs tabs="{{tradestatuslist}}" onTabClick="tradestaustuschange" onChange="tradestaustuschange" activeTab="{{tradestatus}}">
+    <tab-content style="height:0;"></tab-content>
+  </tabs>
+  <view style="text-align:center;margin-top:10%">
+    <icon type="loading" size="30" color="red"></icon>
+    <view a:if="{{!user}}">尚未获取授权数据，授权后可显示订单</view>
+    <button size="default" type="primary" onTap="testTopApi">Button</button>
+  </view>
+  <view>{{message}}</view>
+</view>
