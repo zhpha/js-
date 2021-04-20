@@ -1,8 +1,0 @@
-{
-  "usingComponents": {
-    "card": "mini-antui/es/card/index",
-    "tabs": "mini-antui/es/tabs/index",
-    "tab-content": "mini-antui/es/tabs/tab-content/index",
-    "am-icon": "mini-antui/es/am-icon/index"
-  }
-}
